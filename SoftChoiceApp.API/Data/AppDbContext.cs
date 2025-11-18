@@ -46,6 +46,8 @@ public partial class AppDbContext : DbContext
 
     public virtual DbSet<UserRole> UserRoles { get; set; }
 
+    public virtual DbSet<UserRoleMapping> UserRoleMappings { get; set; }
+
     public virtual DbSet<Vendor> Vendors { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -501,6 +503,23 @@ public partial class AppDbContext : DbContext
             entity.Property(e => e.UpdatedBy)
                 .HasMaxLength(50)
                 .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<UserRoleMapping>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__UserRole__3214EC073B30814A");
+
+            entity.ToTable("UserRoleMapping");
+
+            entity.HasOne(d => d.User).WithMany(p => p.UserRoleMappings)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__UserRoleM__UserI__160F4887");
+
+            entity.HasOne(d => d.UserRole).WithMany(p => p.UserRoleMappings)
+                .HasForeignKey(d => d.UserRoleId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__UserRoleM__UserR__17036CC0");
         });
 
         modelBuilder.Entity<Vendor>(entity =>

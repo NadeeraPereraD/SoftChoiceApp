@@ -11,9 +11,11 @@ namespace SoftChoiceApp.API.Controllers.UserManagement
     public class UserRolesController : ControllerBase
     {
         private readonly IUserRolesService _userRolesService;
+        private readonly ILogger<UserRolesController> _logger;
 
-        public UserRolesController(IUserRolesService userRolesService)
+        public UserRolesController(ILogger<UserRolesController> logger, IUserRolesService userRolesService)
         {
+            _logger = logger;
             _userRolesService = userRolesService;
         }
 
@@ -32,18 +34,22 @@ namespace SoftChoiceApp.API.Controllers.UserManagement
             }
             catch (NotFoundException ex)
             {
+                _logger.LogWarning(ex, "Not found error occurred.");
                 return NotFound(new { Message = ex.Message });
             }
             catch (UnauthorizedAccessAppException ex)
             {
+                _logger.LogWarning(ex, "Unauthorized access attempt.");
                 return Unauthorized(new { Message = ex.Message });
             }
             catch (ForbiddenAccessException ex)
             {
+                _logger.LogWarning(ex, "Forbidden access.");
                 return Forbid();
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Unexpected server error.");
                 return StatusCode(500, new { Message = "Internal server error", Details = ex.Message });
             }
         }
@@ -67,18 +73,22 @@ namespace SoftChoiceApp.API.Controllers.UserManagement
             }
             catch (NotFoundException ex)
             {
+                _logger.LogWarning(ex, "Not found error occurred.");
                 return NotFound(new { Message = ex.Message });
             }
             catch (UnauthorizedAccessAppException ex)
             {
+                _logger.LogWarning(ex, "Unauthorized access attempt.");
                 return Unauthorized(new { Message = ex.Message });
             }
             catch (ForbiddenAccessException ex)
             {
+                _logger.LogWarning(ex, "Forbidden access.");
                 return Forbid();
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Unexpected server error.");
                 return StatusCode(500, new { Message = "Internal server error", Details = ex.Message });
             }
         }
@@ -99,18 +109,22 @@ namespace SoftChoiceApp.API.Controllers.UserManagement
             }
             catch (NotFoundException ex)
             {
+                _logger.LogWarning(ex, "Not found error occurred.");
                 return NotFound(new { Message = ex.Message });
             }
             catch (UnauthorizedAccessAppException ex)
             {
+                _logger.LogWarning(ex, "Unauthorized access attempt.");
                 return Unauthorized(new { Message = ex.Message });
             }
             catch (ForbiddenAccessException ex)
             {
+                _logger.LogWarning(ex, "Forbidden access.");
                 return Forbid();
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Unexpected server error.");
                 return StatusCode(500, new { Message = "Internal server error", Details = ex.Message });
             }
         }
@@ -131,18 +145,22 @@ namespace SoftChoiceApp.API.Controllers.UserManagement
             }
             catch (NotFoundException ex)
             {
+                _logger.LogWarning(ex, "Not found error occurred.");
                 return NotFound(new { Message = ex.Message });
             }
             catch (UnauthorizedAccessAppException ex)
             {
+                _logger.LogWarning(ex, "Unauthorized access attempt.");
                 return Unauthorized(new { Message = ex.Message });
             }
             catch (ForbiddenAccessException ex)
             {
+                _logger.LogWarning(ex, "Forbidden access.");
                 return Forbid();
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Unexpected server error.");
                 return StatusCode(500, new { Message = "Internal server error", Details = ex.Message });
             }
         }
@@ -167,18 +185,22 @@ namespace SoftChoiceApp.API.Controllers.UserManagement
             }
             catch (NotFoundException ex)
             {
+                _logger.LogWarning(ex, "Not found error occurred.");
                 return NotFound(new { Message = ex.Message });
             }
             catch (UnauthorizedAccessAppException ex)
             {
+                _logger.LogWarning(ex, "Unauthorized access attempt.");
                 return Unauthorized(new { Message = ex.Message });
             }
             catch (ForbiddenAccessException ex)
             {
+                _logger.LogWarning(ex, "Forbidden access.");
                 return Forbid();
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Unexpected server error.");
                 return StatusCode(500, new { Message = "Internal server error", Details = ex.Message });
             }
         }

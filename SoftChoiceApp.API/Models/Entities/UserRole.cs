@@ -18,4 +18,6 @@ public partial class UserRole
     public string UpdatedBy { get; set; } = null!;
 
     public DateOnly UpdatedDate { get; set; }
+
+    public virtual ICollection<UserRoleMapping> UserRoleMappings { get; set; } = new List<UserRoleMapping>();
 }
