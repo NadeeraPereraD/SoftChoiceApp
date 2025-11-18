@@ -1,9 +1,11 @@
+using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using SoftChoiceApp.API.Data;
 using SoftChoiceApp.API.Infrastructure.DependencyInjection;
+using SoftChoiceApp.API.Services.Validations.Users;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -72,6 +74,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddRepositories();
 builder.Services.AddServices();
+builder.Services.AddValidatorsFromAssembly(typeof(CreateUserValidator).Assembly);
 
 var app = builder.Build();
 
