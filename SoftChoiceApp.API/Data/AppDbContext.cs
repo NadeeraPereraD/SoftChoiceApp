@@ -479,9 +479,6 @@ public partial class AppDbContext : DbContext
             entity.Property(e => e.Password)
                 .HasMaxLength(500)
                 .IsUnicode(false);
-            entity.Property(e => e.Role)
-                .HasMaxLength(50)
-                .IsUnicode(false);
             entity.Property(e => e.UpdatedBy)
                 .HasMaxLength(50)
                 .IsUnicode(false);

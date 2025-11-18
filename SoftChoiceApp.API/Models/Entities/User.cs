@@ -23,8 +23,6 @@ public partial class User
 
     public string NIC { get; set; } = null!;
 
-    public string Role { get; set; } = null!;
-
     public bool IsActive { get; set; }
 
     public string CreatedBy { get; set; } = null!;
