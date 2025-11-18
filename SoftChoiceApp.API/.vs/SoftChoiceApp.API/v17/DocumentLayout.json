@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\services\\usermanagement\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:services\\usermanagement\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\interfaces\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:interfaces\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\interfaces\\iuserrolesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:interfaces\\iuserrolesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\interfaces\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:interfaces\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\interfaces\\iuserrolesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:interfaces\\iuserrolesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\interfaces\\iuserrolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,6 +51,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UsersServices.cs",
+              "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Services\\UserManagement\\UsersServices.cs",
+              "RelativeDocumentMoniker": "Services\\UserManagement\\UsersServices.cs",
+              "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Services\\UserManagement\\UsersServices.cs",
+              "RelativeToolTip": "Services\\UserManagement\\UsersServices.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T07:58:08.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "IUsersRepository.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Interfaces\\IUsersRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IUsersRepository.cs",
@@ -65,14 +82,14 @@
               "RelativeDocumentMoniker": "Interfaces\\IUsersService.cs",
               "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Interfaces\\IUsersService.cs",
               "RelativeToolTip": "Interfaces\\IUsersService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T07:08:37.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserRolesController.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Controllers\\UserManagement\\UserRolesController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserManagement\\UserRolesController.cs",
@@ -85,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UserRolesServices.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Services\\UserManagement\\UserRolesServices.cs",
               "RelativeDocumentMoniker": "Services\\UserManagement\\UserRolesServices.cs",
@@ -97,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserRolesRepository.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Repositories\\UserManagement\\UserRolesRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UserManagement\\UserRolesRepository.cs",
@@ -110,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "IUserRolesRepository.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Interfaces\\IUserRolesRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IUserRolesRepository.cs",
@@ -123,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IUserRolesService.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Interfaces\\IUserRolesService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IUserRolesService.cs",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SoftChoiceApp.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2abafa4408e3dc4520c2676ef6c4f0c241ce571")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d75d4bc2e0466aacd14b02ce6ba11233e952807")]
 [assembly: System.Reflection.AssemblyProductAttribute("SoftChoiceApp.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SoftChoiceApp.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
