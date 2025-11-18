@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\models\\dtos\\usermanagementdto\\userssoftdeletedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:models\\dtos\\usermanagementdto\\userssoftdeletedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\interfaces\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:interfaces\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\models\\dtos\\usermanagementdto\\usersupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:models\\dtos\\usermanagementdto\\usersupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\models\\dtos\\usermanagementdto\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:models\\dtos\\usermanagementdto\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\models\\dtos\\usermanagementdto\\userscreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:models\\dtos\\usermanagementdto\\userscreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\interfaces\\iuserrolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:interfaces\\iuserrolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\interfaces\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:interfaces\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\interfaces\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:interfaces\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\repositories\\usermanagement\\userrolesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,40 +23,12 @@
       "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:controllers\\usermanagement\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\models\\dtos\\usermanagementdto\\userrolesupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:models\\dtos\\usermanagementdto\\userrolesupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\models\\dtos\\usermanagementdto\\userrolesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:models\\dtos\\usermanagementdto\\userrolesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\models\\dtos\\usermanagementdto\\userrolescreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:models\\dtos\\usermanagementdto\\userrolescreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\interfaces\\iuserrolesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:interfaces\\iuserrolesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\models\\dtos\\usermanagementdto\\userrolessoftdeletedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:models\\dtos\\usermanagementdto\\userrolessoftdeletedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\services\\usermanagement\\userrolesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:services\\usermanagement\\userrolesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\interfaces\\iuserrolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:interfaces\\iuserrolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\models\\dtos\\usermanagementdto\\userrolesrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:models\\dtos\\usermanagementdto\\userrolesrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|d:\\git\\softchoiceapp\\softchoiceapp.api\\models\\dtos\\usermanagementdto\\userrolesresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C5A7C-9CC8-483F-B8CB-64ADDB791BF8}|SoftChoiceApp.API.csproj|solutionrelative:models\\dtos\\usermanagementdto\\userrolesresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,85 +46,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsersSoftDeleteDto.cs",
-              "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UsersSoftDeleteDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\UserManagementDTO\\UsersSoftDeleteDto.cs",
-              "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UsersSoftDeleteDto.cs",
-              "RelativeToolTip": "Models\\DTOs\\UserManagementDTO\\UsersSoftDeleteDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:13:59.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsersUpdateDto.cs",
-              "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UsersUpdateDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\UserManagementDTO\\UsersUpdateDto.cs",
-              "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UsersUpdateDto.cs",
-              "RelativeToolTip": "Models\\DTOs\\UserManagementDTO\\UsersUpdateDto.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAwAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:12:22.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsersCreateDto.cs",
-              "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UsersCreateDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\UserManagementDTO\\UsersCreateDto.cs",
-              "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UsersCreateDto.cs",
-              "RelativeToolTip": "Models\\DTOs\\UserManagementDTO\\UsersCreateDto.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:11:10.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UsersDto.cs",
-              "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UsersDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\UserManagementDTO\\UsersDto.cs",
-              "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UsersDto.cs",
-              "RelativeToolTip": "Models\\DTOs\\UserManagementDTO\\UsersDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAQwAYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:10:19.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "IUsersRepository.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Interfaces\\IUsersRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IUsersRepository.cs",
               "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Interfaces\\IUsersRepository.cs",
               "RelativeToolTip": "Interfaces\\IUsersRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T07:09:02.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "IUsersService.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Interfaces\\IUsersService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IUsersService.cs",
               "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Interfaces\\IUsersService.cs",
               "RelativeToolTip": "Interfaces\\IUsersService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T07:08:37.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "UserRolesController.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Controllers\\UserManagement\\UserRolesController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserManagement\\UserRolesController.cs",
@@ -177,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
               "Title": "UserRolesServices.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Services\\UserManagement\\UserRolesServices.cs",
               "RelativeDocumentMoniker": "Services\\UserManagement\\UserRolesServices.cs",
@@ -189,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "UserRolesRepository.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Repositories\\UserManagement\\UserRolesRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UserManagement\\UserRolesRepository.cs",
@@ -202,79 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserRolesRequestDto.cs",
-              "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UserRolesRequestDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\UserManagementDTO\\UserRolesRequestDto.cs",
-              "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UserRolesRequestDto.cs",
-              "RelativeToolTip": "Models\\DTOs\\UserManagementDTO\\UserRolesRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T09:01:23.853Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserRolesResponseDto.cs",
-              "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UserRolesResponseDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\UserManagementDTO\\UserRolesResponseDto.cs",
-              "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UserRolesResponseDto.cs",
-              "RelativeToolTip": "Models\\DTOs\\UserManagementDTO\\UserRolesResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T09:01:06.233Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserRolesSoftDeleteDto.cs",
-              "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UserRolesSoftDeleteDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\UserManagementDTO\\UserRolesSoftDeleteDto.cs",
-              "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UserRolesSoftDeleteDto.cs",
-              "RelativeToolTip": "Models\\DTOs\\UserManagementDTO\\UserRolesSoftDeleteDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T08:59:33.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserRolesUpdateDto.cs",
-              "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UserRolesUpdateDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\UserManagementDTO\\UserRolesUpdateDto.cs",
-              "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UserRolesUpdateDto.cs",
-              "RelativeToolTip": "Models\\DTOs\\UserManagementDTO\\UserRolesUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T08:59:11.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserRolesDto.cs",
-              "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UserRolesDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\UserManagementDTO\\UserRolesDto.cs",
-              "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UserRolesDto.cs",
-              "RelativeToolTip": "Models\\DTOs\\UserManagementDTO\\UserRolesDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAcAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T08:58:17.872Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserRolesCreateDto.cs",
-              "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UserRolesCreateDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\UserManagementDTO\\UserRolesCreateDto.cs",
-              "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Models\\DTOs\\UserManagementDTO\\UserRolesCreateDto.cs",
-              "RelativeToolTip": "Models\\DTOs\\UserManagementDTO\\UserRolesCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T08:57:59.009Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "IUserRolesRepository.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Interfaces\\IUserRolesRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IUserRolesRepository.cs",
@@ -286,15 +122,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "IUserRolesService.cs",
               "DocumentMoniker": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Interfaces\\IUserRolesService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IUserRolesService.cs",
               "ToolTip": "D:\\GIT\\SoftChoiceApp\\SoftChoiceApp.API\\Interfaces\\IUserRolesService.cs",
               "RelativeToolTip": "Interfaces\\IUserRolesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAwAAAB9AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAB9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T08:54:51.577Z"
+              "WhenOpened": "2025-11-17T08:54:51.577Z",
+              "EditorCaption": ""
             }
           ]
         }
