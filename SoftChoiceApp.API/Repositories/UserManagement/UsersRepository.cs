@@ -283,5 +283,24 @@ namespace SoftChoiceApp.API.Repositories.UserManagement
                 throw;
             }
         }
+        public async Task<UserWithRoleIdsDto?> GetUserByEmailUNameAsync(string login)
+        {
+            var user = await _context.Users
+                .Where(u => u.IsActive && (u.Email == login || u.UserName == login))
+                .Select(u => new UserWithRoleIdsDto
+                {
+                    Id = u.Id,
+                    Email = u.Email,
+                    UserName = u.UserName,
+                    Password = u.Password,
+                    RoleIds = u.UserRoleMappings
+                                .Where(urm => urm.UserRole.IsActive)
+                                .Select(urm => urm.UserRoleId)
+                                .ToList()
+                })
+                .FirstOrDefaultAsync();
+
+            return user;
+        }
     }
 }

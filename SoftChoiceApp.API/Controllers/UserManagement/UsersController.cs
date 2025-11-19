@@ -205,5 +205,40 @@ namespace SoftChoiceApp.API.Controllers.UserManagement
                 return StatusCode(500, new { Message = "Internal server error", Details = ex.Message });
             }
         }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequestDto dto)
+        {
+            try
+            {
+                var result = await _usersService.LoginAsync(dto);
+
+                if (!result.IsSuccess)
+                    return Unauthorized(new { message = result.ErrorMessage });
+
+                return Ok(new { token = result.Token });
+            }
+            catch (NotFoundException ex)
+            {
+                _logger.LogWarning(ex, "Not found error occurred.");
+                return NotFound(new { Message = ex.Message });
+            }
+            catch (UnauthorizedAccessAppException ex)
+            {
+                _logger.LogWarning(ex, "Unauthorized access attempt.");
+                return Unauthorized(new { Message = ex.Message });
+            }
+            catch (ForbiddenAccessException ex)
+            {
+                _logger.LogWarning(ex, "Forbidden access.");
+                return Forbid();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Unexpected server error.");
+                return StatusCode(500, new { Message = "Internal server error", Details = ex.Message });
+            }
+        }
+
     }
 }
