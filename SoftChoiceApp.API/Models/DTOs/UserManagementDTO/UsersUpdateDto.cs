@@ -11,6 +11,7 @@
         public string Mobile { get; set; } = null!;
         public string Address { get; set; } = null!;
         public string NIC { get; set; } = null!;
+        public List<string> Roles { get; set; } = new();
         public string UpdatedBy { get; set; } = null!;
     }
 }

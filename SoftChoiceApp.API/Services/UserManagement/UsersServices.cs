@@ -19,7 +19,7 @@ namespace SoftChoiceApp.API.Services.UserManagement
             dto.Password = _passwordHasher.HashPassword(dto, dto.Password);
             return await _repo.CreateAsync(dto); 
         }
-        public Task<(IEnumerable<User> users, string? ErrorMessage, string? SuccessMessage)> GetAllUsersAsync()
+        public Task<(IEnumerable<UserWithRolesDto> users, string? ErrorMessage, string? SuccessMessage)> GetAllUsersAsync()
             => _repo.GetAllAsync();
         public async Task<(bool IsSuccess, string? ErrorMessage, string? SuccessMessage)> UpdateAsyncByID(UsersUpdateDto dto)
         {
@@ -32,7 +32,7 @@ namespace SoftChoiceApp.API.Services.UserManagement
         }
         public async Task<(bool IsSuccess, string? ErrorMessage, string? SuccessMessage)> SoftDeleteAsyncByID(UsersSoftDeleteDto dto)
             => await _repo.SoftDeleteByKeyAsync(dto);
-        public async Task<(IEnumerable<User> users, string? ErrorMessage, string? SuccessMessage)> GetAllInactiveUserRolesAsync()
+        public async Task<(IEnumerable<UserWithRolesDto> users, string? ErrorMessage, string? SuccessMessage)> GetAllInactiveUserRolesAsync()
             => await _repo.GetAllInactiveAsync();
     }
 }

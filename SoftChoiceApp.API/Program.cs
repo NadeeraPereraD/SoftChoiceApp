@@ -76,6 +76,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddRepositories();
 builder.Services.AddServices();
 builder.Services.AddValidatorsFromAssembly(typeof(CreateUserValidator).Assembly);
+builder.Services.AddValidatorsFromAssembly(typeof(UpdateUserValidator).Assembly);
 
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddFluentValidationClientsideAdapters();

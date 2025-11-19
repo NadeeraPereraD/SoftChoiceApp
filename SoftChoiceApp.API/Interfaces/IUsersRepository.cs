@@ -6,9 +6,9 @@ namespace SoftChoiceApp.API.Interfaces
     public interface IUsersRepository
     {
         Task<(bool IsSuccess, string? ErrorMessage, string? SuccessMessage)> CreateAsync(UsersCreateDto dto);
-        Task<(IEnumerable<User> users, string? ErrorMessage, string? SuccessMessage)> GetAllAsync();
+        Task<(IEnumerable<UserWithRolesDto> users, string? ErrorMessage, string? SuccessMessage)> GetAllAsync();
         Task<(bool IsSuccess, string? ErrorMessage, string? SuccessMessage)> UpdateByKeyAsync(UsersUpdateDto dto);
         Task<(bool IsSuccess, string? ErrorMessage, string? SuccessMessage)> SoftDeleteByKeyAsync(UsersSoftDeleteDto dto);
-        Task<(IEnumerable<User> users, string? ErrorMessage, string? SuccessMessage)> GetAllInactiveAsync();
+        Task<(IEnumerable<UserWithRolesDto> users, string? ErrorMessage, string? SuccessMessage)> GetAllInactiveAsync();
     }
 }

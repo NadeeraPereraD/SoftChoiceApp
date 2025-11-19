@@ -1,0 +1,44 @@
+﻿using FluentValidation;
+using SoftChoiceApp.API.Models.DTOs.UserManagementDTO;
+
+namespace SoftChoiceApp.API.Services.Validations.Users
+{
+    public class UpdateUserValidator : AbstractValidator<UsersUpdateDto>
+    {
+        public UpdateUserValidator()
+        {
+            RuleFor(x => x.FirstName)
+            .NotEmpty().WithMessage("First name is required.")
+            .Matches("^[A-Za-z]+$").WithMessage("First name must contain letters only.");
+
+            RuleFor(x => x.LastName)
+                .NotEmpty().WithMessage("Last name is required.")
+                .Matches("^[A-Za-z]+$").WithMessage("Last name must contain letters only.");
+
+            RuleFor(x => x.UserName)
+                .NotEmpty().WithMessage("Username is required.")
+                .Matches("^(?![0-9])(?![0-9]+$)[A-Za-z0-9._/]+$")
+                .WithMessage("Username must contain letters/numbers/._/ and cannot start with a number or be only numbers.");
+
+            RuleFor(x => x.Password)
+                .NotEmpty().WithMessage("Password is required.")
+                .Matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z0-9]).{8,12}$")
+                .WithMessage("Password must be 8–12 characters with upper, lower, number, and special character.");
+
+            RuleFor(x => x.Email)
+                .NotEmpty().WithMessage("Email is required.")
+                .Matches("^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$")
+                .WithMessage("Invalid email format.");
+
+            RuleFor(x => x.NIC)
+                .NotEmpty().WithMessage("NIC is required.")
+                .Matches(@"^(\d{9}[VXvx]|\d{12})$")
+                .WithMessage("NIC must be either 9 digits followed by V/X, or a 12-digit number.");
+
+            RuleFor(x => x.Mobile)
+                .NotEmpty().WithMessage("Mobile number is required.")
+                .Matches(@"^(07[0-9]{8})$")
+                .WithMessage("Invalid mobile number. It must start with 07 and contain 10 digits.");
+        }
+    }
+}
