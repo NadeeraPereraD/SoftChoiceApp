@@ -1,4 +1,5 @@
 using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -75,6 +76,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddRepositories();
 builder.Services.AddServices();
 builder.Services.AddValidatorsFromAssembly(typeof(CreateUserValidator).Assembly);
+
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
 
 var app = builder.Build();
 

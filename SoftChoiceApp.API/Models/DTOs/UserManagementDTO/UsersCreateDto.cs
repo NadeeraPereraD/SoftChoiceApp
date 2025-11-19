@@ -10,6 +10,7 @@
         public string Mobile { get; set; } = null!;
         public string Address { get; set; } = null!;
         public string NIC { get; set; } = null!;
+        public string Roles { get; set; } = null!;
         public string CreatedBy { get; set; } = null!;
     }
 }

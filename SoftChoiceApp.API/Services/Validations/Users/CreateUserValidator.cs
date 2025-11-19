@@ -29,6 +29,16 @@ namespace SoftChoiceApp.API.Services.Validations.Users
                 .NotEmpty().WithMessage("Email is required.")
                 .Matches("^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$")
                 .WithMessage("Invalid email format.");
+
+            RuleFor(x => x.NIC)
+                .NotEmpty().WithMessage("NIC is required.")
+                .Matches(@"^(\d{9}[VXvx]|\d{12})$")
+                .WithMessage("NIC must be either 9 digits followed by V/X, or a 12-digit number.");
+
+            RuleFor(x => x.Mobile)
+                .NotEmpty().WithMessage("Mobile number is required.")
+                .Matches(@"^(07[0-9]{8})$")
+                .WithMessage("Invalid Sri Lankan mobile number. It must start with 07 and contain 10 digits.");
         }
     }
 }

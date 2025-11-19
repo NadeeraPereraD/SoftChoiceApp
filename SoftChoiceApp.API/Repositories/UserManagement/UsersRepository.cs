@@ -35,6 +35,7 @@ namespace SoftChoiceApp.API.Repositories.UserManagement
                 cmd.Parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@Mobile", dto.Mobile));
                 cmd.Parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@Address", dto.Address));
                 cmd.Parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@NIC", dto.NIC));
+                cmd.Parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@Roles", dto.Roles));
                 cmd.Parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@CreatedBy", dto.CreatedBy));
 
                 var pError = new Microsoft.Data.SqlClient.SqlParameter("@ErrorMessage", SqlDbType.NVarChar, 500)
