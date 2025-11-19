@@ -14,19 +14,44 @@ namespace SoftChoiceApp.API.Services.UserManagement
         private readonly IUsersRepository _repo;
         private readonly IPasswordHasher<object> _passwordHasher;
         private readonly IConfiguration _configuration;
-        public UsersServices(IUsersRepository repo, IConfiguration configuration)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public UsersServices(IUsersRepository repo, IConfiguration configuration, IHttpContextAccessor httpContextAccessor)
         {
             _repo = repo;
             _passwordHasher = new PasswordHasher<object>();
             _configuration = configuration;
+            _httpContextAccessor = httpContextAccessor;
         }
         public async Task<(bool IsSuccess, string? ErrorMessage, string? SuccessMessage)> CreateAsync(UsersCreateDto dto)
         { 
             dto.Password = _passwordHasher.HashPassword(dto, dto.Password);
             return await _repo.CreateAsync(dto); 
         }
-        public Task<(IEnumerable<UserWithRolesDto> users, string? ErrorMessage, string? SuccessMessage)> GetAllUsersAsync()
-            => _repo.GetAllAsync();
+        public async Task<(IEnumerable<UserWithRolesDto> users, string? ErrorMessage, string? SuccessMessage)> GetAllUsersAsync()
+        {
+            var result = await _repo.GetAllAsync();
+            var userRoles = _httpContextAccessor.HttpContext.User.Claims
+                .Where(c => c.Type == ClaimTypes.Role)
+                .Select(c => c.Value)
+                .ToList();
+
+            bool isSuperAdmin = userRoles.Contains("1"); 
+            bool isAdmin = userRoles.Contains("2");      
+
+            if (isSuperAdmin)
+                return result;
+
+            if (isAdmin)
+            {
+                var filteredUsers = result.users
+                    .Where(u => !u.Roles.Contains("SuperAdmin") && !u.Roles.Contains("1"))
+                    .ToList();
+
+                return (filteredUsers, result.ErrorMessage, result.SuccessMessage);
+            }
+
+            return (new List<UserWithRolesDto>(), "Not authorized", null);
+        }
         public async Task<(bool IsSuccess, string? ErrorMessage, string? SuccessMessage)> UpdateAsyncByID(UsersUpdateDto dto)
         {
             if (!string.IsNullOrWhiteSpace(dto.Password))
@@ -44,9 +69,6 @@ namespace SoftChoiceApp.API.Services.UserManagement
         public async Task<(bool IsSuccess, string? ErrorMessage, string? Token)> LoginAsync(LoginRequestDto dto)
         {
             var user = await _repo.GetUserByEmailUNameAsync(dto.Login);
-
-            //if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.Password))
-            //    return (false, "Invalid email or password", null);
 
             if (user == null)
                 return (false, "Invalid email or password", null);
@@ -72,7 +94,7 @@ namespace SoftChoiceApp.API.Services.UserManagement
 
             foreach (var roleId in user.RoleIds)
             {
-                claims.Add(new Claim("RoleId", roleId.ToString())); // custom claim
+                claims.Add(new Claim(ClaimTypes.Role, roleId.ToString())); // custom claim
             }
 
             var tokenDescriptor = new SecurityTokenDescriptor

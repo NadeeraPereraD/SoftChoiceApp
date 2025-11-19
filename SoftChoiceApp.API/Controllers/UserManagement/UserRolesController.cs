@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SoftChoiceApp.API.Exceptions;
 using SoftChoiceApp.API.Interfaces;
@@ -6,6 +7,7 @@ using SoftChoiceApp.API.Models.DTOs.UserManagementDTO;
 
 namespace SoftChoiceApp.API.Controllers.UserManagement
 {
+    [Authorize(Roles = "1,2")]
     [Route("api/[controller]")]
     [ApiController]
     public class UserRolesController : ControllerBase

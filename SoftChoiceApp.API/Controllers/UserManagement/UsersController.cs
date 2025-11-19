@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SoftChoiceApp.API.Exceptions;
 using SoftChoiceApp.API.Interfaces;
@@ -20,6 +21,7 @@ namespace SoftChoiceApp.API.Controllers.UserManagement
             _logger = logger;
         }
 
+        [Authorize(Roles = "1,2")]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] UsersCreateDto dto)
         {
@@ -55,6 +57,7 @@ namespace SoftChoiceApp.API.Controllers.UserManagement
             }
         }
 
+        [Authorize(Roles = "1,2")]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -94,6 +97,7 @@ namespace SoftChoiceApp.API.Controllers.UserManagement
             }
         }
 
+        [Authorize(Roles = "1,2")]
         [HttpPut("by-keys")]
         public async Task<IActionResult> UpdateByKey([FromBody] UsersUpdateDto dto)
         {
@@ -130,6 +134,7 @@ namespace SoftChoiceApp.API.Controllers.UserManagement
             }
         }
 
+        [Authorize(Roles = "1,2")]
         [HttpPut("soft-delete-by-keys")]
         public async Task<IActionResult> SoftDeleteByKey([FromBody] UsersSoftDeleteDto dto)
         {
@@ -166,6 +171,7 @@ namespace SoftChoiceApp.API.Controllers.UserManagement
             }
         }
 
+        [Authorize(Roles = "1,2")]
         [HttpGet]
         [Route("inactive")]
         public async Task<IActionResult> GetAllInactive()
