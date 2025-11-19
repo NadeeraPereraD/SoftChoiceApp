@@ -38,7 +38,7 @@ namespace SoftChoiceApp.API.Services.Validations.Users
             RuleFor(x => x.Mobile)
                 .NotEmpty().WithMessage("Mobile number is required.")
                 .Matches(@"^(07[0-9]{8})$")
-                .WithMessage("Invalid Sri Lankan mobile number. It must start with 07 and contain 10 digits.");
+                .WithMessage("Invalid mobile number. It must start with 07 and contain 10 digits.");
         }
     }
 }

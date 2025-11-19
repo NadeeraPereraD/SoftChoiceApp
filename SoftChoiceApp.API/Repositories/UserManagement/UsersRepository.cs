@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SoftChoiceApp.API.Data;
 using SoftChoiceApp.API.Interfaces;
+using SoftChoiceApp.API.Models.DTOs;
 using SoftChoiceApp.API.Models.DTOs.UserManagementDTO;
 using SoftChoiceApp.API.Models.Entities;
 using System.Data;
@@ -35,8 +36,21 @@ namespace SoftChoiceApp.API.Repositories.UserManagement
                 cmd.Parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@Mobile", dto.Mobile));
                 cmd.Parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@Address", dto.Address));
                 cmd.Parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@NIC", dto.NIC));
-                cmd.Parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@Roles", dto.Roles));
                 cmd.Parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@CreatedBy", dto.CreatedBy));
+
+                var rolesTable = new DataTable();
+                rolesTable.Columns.Add("RoleName", typeof(string));
+
+                foreach (var role in dto.Roles)
+                {
+                    rolesTable.Rows.Add(role.Trim());
+                }
+
+                cmd.Parameters.Add(new SqlParameter("@Roles", rolesTable)
+                {
+                    SqlDbType = SqlDbType.Structured,
+                    TypeName = "dbo.RoleList"
+                });
 
                 var pError = new Microsoft.Data.SqlClient.SqlParameter("@ErrorMessage", SqlDbType.NVarChar, 500)
                 {
@@ -61,17 +75,46 @@ namespace SoftChoiceApp.API.Repositories.UserManagement
                 throw;
             }
         }
-        public async Task<(IEnumerable<User> users, string? ErrorMessage, string? SuccessMessage)> GetAllAsync()
+        public async Task<(IEnumerable<UserWithRolesDto> users, string? ErrorMessage, string? SuccessMessage)> GetAllAsync()
         {
+            var users = new List<UserWithRolesDto>();
             try
             {
+                var conn = _context.Database.GetDbConnection();
+                if (conn.State != ConnectionState.Open)
+                    await conn.OpenAsync();
+
+                await using var cmd = conn.CreateCommand();
+                cmd.CommandText = "usp_Users_GetAll";
+                cmd.CommandType = CommandType.StoredProcedure;
+
                 var errorParam = new SqlParameter("@ErrorMessage", SqlDbType.NVarChar, 500) { Direction = ParameterDirection.Output };
                 var successParam = new SqlParameter("@SuccessMessage", SqlDbType.NVarChar, 500) { Direction = ParameterDirection.Output };
 
-                var users = await _context.Users
-                    .FromSqlRaw("EXEC dbo.usp_Users_GetAll @ErrorMessage OUTPUT, @SuccessMessage OUTPUT",
-                                 errorParam, successParam)
-                    .ToListAsync();
+                cmd.Parameters.Add(errorParam);
+                cmd.Parameters.Add(successParam);
+
+                await using var reader = await cmd.ExecuteReaderAsync();
+
+                while (await reader.ReadAsync())
+                {
+                    var user = new UserWithRolesDto
+                    {
+                        Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                        FirstName = reader.GetString(reader.GetOrdinal("FirstName")),
+                        LastName = reader.GetString(reader.GetOrdinal("LastName")),
+                        UserName = reader.GetString(reader.GetOrdinal("UserName")),
+                        Email = reader.GetString(reader.GetOrdinal("Email")),
+                        Mobile = reader.GetString(reader.GetOrdinal("Mobile")),
+                        NIC = reader.GetString(reader.GetOrdinal("NIC")),
+                        Address = reader.GetString(reader.GetOrdinal("Address")),
+                        Roles = string.IsNullOrEmpty(reader["Roles"] as string)
+                                ? new List<string>()
+                                : ((string)reader["Roles"]).Split(',').Select(r => r.Trim()).ToList()
+                    };
+
+                    users.Add(user);
+                }
 
                 var errorMsg = errorParam.Value as string;
                 var successMsg = successParam.Value as string;
